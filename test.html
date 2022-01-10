@@ -1,0 +1,962 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0048)http://vmzhk.vioil.com/shareholders/special.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ </head><body><xbasehref="http: vmzhk.vioil.com="" ua="" "="">
+ <title></title>
+ <link rel="shortcut icon" href="http://vmzhk.vioil.com/static.vmzhk.vioil.com/i/favicon.ico" tppabs="http://static.vmzhk.vioil.com/i/favicon.ico" type="image/x-icon">
+ <link href="http://vmzhk.vioil.com/ua/" rel="home">
+ 
+ <script type="text/javascript" src="./special_files/jquery-1.3.2.min.js" tppabs="http://static.vmzhk.vioil.com/j/jquery-1.3.2.min.js"></script>
+ <script type="text/javascript" src="./special_files/jquery.form.js" tppabs="http://static.vmzhk.vioil.com/j/jquery.form.js"></script>
+ <script type="text/javascript" src="./special_files/custom.js" tppabs="http://static.vmzhk.vioil.com/j/custom.js"></script>
+<style type="text/css">
+html, body { width:100%; height:100%; padding:0px; margin:0px; background:#fff none; text-align:center; color:#000; background:url(../../../static.vmzhk.vioil.com/i/page-bg.png)/*tpa=http://static.vmzhk.vioil.com/i/page-bg.png*/ 0px 0px repeat-x; }
+body, td { font:12px tahoma; color:#666; }
+table { border-collapse:collapse; }
+label { cursor:pointer; }
+img { border:0px; }
+form { margin:0px; padding:0px; }
+a { color:#0f8243; }
+h1 { color:#0f8243; font: 20px arial; margin: 20px 0px 10px 0px; }
+h2 { color:#0f8243; font:16px arial; margin: 20px 0px 10px 0px; }
+
+#content { display:block; margin-bottom:-67px; position:relative; z-index:0; min-height:100%; }
+#header { z-index:1; position:absolute; top:0px; left:0px; width:100%; height:245px; vertical-align:top; }
+#footer { height:65px; z-index:2; position:relative;}
+
+div.msg-error { border: 1px solid #FF0000; background-color:#F5C8E3; padding:5px;margin:5px; }
+div.msg-notice { border: 1px solid #00FF00; background-color:#D8FBCA; padding:5px;margin:5px; }
+
+ul.main-menu { }
+ul.main-menu li { font:14px tahoma; line-height:25px; }
+ul.main-menu li.a { color:#81669c; }
+
+.tl { text-align:left; }
+.tc { text-align:center; }
+.vat { vertical-align:top; }
+.but{position: relative; top: 20px;}
+table{position: relative; top: 20px;}
+.ee{background: linear-gradient(#e4e4e4 70%, #ededed 30%);}
+.block{height:100px;}
+ .modal {
+      position: fixed;
+      /* фиксированное положение */
+      
+      top: 5;
+      right: 0;
+      
+      left: 0;
+      background: rgba(255, 255, 255, 0.349);
+      /* цвет фона */
+      z-index: 1050;
+      opacity: 0;
+      /* по умолчанию модальное окно прозрачно */
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      /* анимация перехода */
+      pointer-events: none;
+      /* элемент невидим для событий мыши */
+    }
+
+    /* при отображении модального окно */
+    .modal:target {
+      opacity: 1;
+      pointer-events: auto;
+      overflow-y: auto;
+    }
+
+    /* ширина модального окна и его отступы от экрана */
+    .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+      }
+    }
+
+    /* свойства для блока, содержащего контент модального окна */
+    .modal-content {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #fff;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .2);
+      border-radius: .3rem;
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+      .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      }
+    }
+
+    /* свойства для заголовка модального окна */
+    .modal-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #eceeef;
+    }
+
+    .modal-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    /* свойства для кнопки "Закрыть" */
+    .close {
+      float: right;
+      font-family: sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .5;
+      text-decoration: none;
+    }
+
+    /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+    .close:focus,
+    .close:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .75;
+    }
+
+    /* свойства для блока, содержащего основное содержимое окна */
+    .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 15px;
+      overflow: auto;
+    }
+    .data{
+      position: relative;
+      left: 170px;
+      bottom: 25px;
+    }
+    .volume{
+      position: relative;
+      bottom: 20px;
+    }
+    .ton{
+      position: relative;
+      bottom: 45px;
+      left: 170px;
+    }
+    .name{
+      position: relative;
+      bottom: 45px;
+    }
+    .tag{
+      position: relative;
+      bottom: 70px;
+      left: 170px;
+    }
+    .cit{
+      position: relative;
+      bottom: 65px;
+    }
+    .build{
+      position: relative;
+      bottom: 90px;
+      left: 170px;
+    }
+    .form{
+      position: relative;
+      bottom: 85px;
+    }
+    .first{
+      position: relative;
+      bottom: 110px;
+      left: 175px;
+    }
+    .service{
+      position: relative;
+      bottom: 105px;
+    }
+    .serv{
+      position: relative;
+      bottom: 100px;
+      
+    }
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">#content { height:100%; }</style>
+<![endif]-->
+
+
+<div id="header" class="tc">
+    <div class="ee">
+<table style="width: 1000px; margin: auto; background: url(&quot;./ВМЖК - Юридические документы_files/sunflower-small.jpg&quot;) 0px 0px no-repeat; --darkreader-inline-bgcolor: initial;" class="tl" cellspacing="0" cellpadding="0" data-darkreader-inline-bgcolor="">
+<tbody><tr style="height:100px;">
+ <td><a href="index.html" tppabs="index.html"><img src="./zvit_files/logo.png" tppabs="http://static.vmzhk.vioil.com/i/logo.png" alt="ВОЖК"></a><div style="margin-left:35px;">Вінницький ОЖК</div>
+</td>
+</tr>
+<tr style="height:145px;"><td></td></tr>
+</tbody></table>
+</div>
+</div>
+
+<div id="content" class="tc">
+<div style="height:255px;overflow:hidden;"></div>
+<table style="width:1000px;margin:auto;border-top:3px solid #0f8243;" class="tl" cellspacing="0" cellpadding="0">
+<tbody><tr>
+ <td style="width:245px;border-right:1px solid #e5e5e5;" class="vat">
+<ul class="main-menu">
+<li><a href="index.html" tppabs="index.html">Про товариство</a></li>
+<li><a href="docs.html" tppabs="docs.html">Юридичні документи</a></li>
+<li><a href="info.html" tppabs="info.html">Акціонерам</a>
+<ul>
+<li><a href="info.html" tppabs="info.html">Інформація для акціонерів</a></li>
+<li><a href="special.html" tppabs="special.html">Особлива інформація</a></li>
+<li><a href="meetings.html" tppabs="meetings.html">Збори акціонерів</a></li>
+</ul>
+</li>
+<li><a href="reports.html" tppabs="reports.html">Звіти</a></li>
+<li><a href="info_audit.html" tppabs="info_audit.html">Інформація для суб’єктів аудиторської діяльності</a></li>
+<li><a href="info_audit.html" tppabs="info_audit.html">Тендери</a></li>
+ <ul>
+<li><a href="tenders.html" tppabs="tenders.html">Подати завку на участь в тендері</a></li>
+ </ul>
+<form >
+  <button class="but" href="https://formdesigner.ru/form/cb/170258/login"><a href="https://formdesigner.ru/form/cb/170258/login">Войти</a></button>
+</form>
+</ul>
+ </td>
+ <td class="vat" style="padding:0px 30px;">
+  <table border="1">
+    <tr>
+      <td >Дата начало/окончание</td>
+      <td  >Категория тендера</td>
+      <td  >Объемы</td>
+      <td  >Наименование</td>
+      <td  >Место поставки	</td>
+      <td  >Форма проведения закупки</td>
+    </tr>
+    <tr>
+      <td >от 30.12.2021 до 08.01.2022 </td>
+     <div style="text-align: center;">
+        <a href="#openModal">	</a>
+      </div>
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">14210000-6 Гравий, песок, щебень и наполнители</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 60 тон</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Отсев гранітний</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке отвева гранитоного а масштабных объемах. Это песок, щебень, гравий и наполнители.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td> <a href="#openModal">14210000-6 Гравий, песок, щебень и наполнители	</a></td>
+      <td>2,5 тон	</td>
+      <td>Отсев гранітний	</td>
+      <td>Украини</td>
+      <td>Закупка без использования электронной системы
+      </td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+       <td><a href="#openModalOne">44110000-4 Конструкционные материалы	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalOne">	</a>
+      </div>
+      <div id="openModalOne" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44110000-4 Конструкционные материалы</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 800тон</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Асфальтна крошка</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по зпкупке асфльтной крошки а болших объемах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>800тон</td>
+      <td>Асфальтна крошка	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+      <td><a href="#openModalTwo">14210000-6 Гравий, песок, щебень и наполнители	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalTwo">	</a>
+      </div>
+      <div id="openModalTwo" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">14210000-6 Гравий, песок, щебень и наполнители</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 2900тон</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Песок речной</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуги по закупке речного печка в больших объемах. Это гравий, песок, щебень, наполнители.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>2900 тоны	</td>
+      <td>Песок речной	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+      <td><a href="#openModalThree">14220000-9 Глина и каолин	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalThree">	</a>
+      </div>
+      <div id="openModalThree" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">14220000-9 Глина и каолин</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 800 тон</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Суглинок</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуги по закупке суглинка в больших объемах. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>500 тон	</td>
+      <td>Суглинок	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+       <td><a href="#openModalFour">44110000-4 Конструкционные материалы	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalFour">	</a>
+      </div>
+      <div id="openModalFour" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44110000-4 Конструкционные материалы</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 150 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Бетонний Блок</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуги по закупке бетонных блоков в хороших объемах. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>150 шт</td>
+      <td>Бетонний Блок	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+       <td><a href="#openModalFive">44110000-4 Конструкционные материалы	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalFive">	</a>
+      </div>
+      <div id="openModalFive" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44110000-4 Конструкционные материалы</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 100 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Столб бетоний 2.7м, плита заборна 0.5м</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке бетонных столбов. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <td>100 шт</td>
+      <td>Столб бетоний 2.7м, плита заборна 0.5м</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+     <td><a href="#openModalSix">44110000-4 Конструкционные материалы	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalSix">	</a>
+      </div>
+      <div id="openModalSix" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44110000-4 Конструкционные материалы</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 90 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Бетонный марш</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке бетонных марш в больших объемах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>90 шт	</td>
+      <td>Бетонный марш	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+      <td><a href="#openModalSeven">44110000-4 Конструкционные материалы	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalSeven">	</a>
+      </div>
+      <div id="openModalSeven" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44110000-4 Конструкционные материалы</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 110 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Плита дорожня б/у</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке дорожних плит в больших объемах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>110 шт</td>
+      <td>Плита дорожня б/у	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+       <td><a href="#openModalEight">44610000-9 Резервуары, контейнеры и сосуды высокого давления	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalEight">	</a>
+      </div>
+      <div id="openModalEight" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44610000-9 Резервуары, контейнеры и сосуды высокого давления</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 10 100 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Гофротара</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке гофротары. Это контейнеры, трубы и т.д.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>10 100 шт	</td>
+      <td>Гофротара</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+       <td><a href="#openModalNine">44617100-9 Картонные коробки	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalNine">	</a>
+      </div>
+      <div id="openModalNine" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44617100-9 Картонные коробки</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 40000 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Картонние коробки</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке картонных коробок для упаковки в больших объемах</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>40000шт</td>
+      <td>Картонние коробки	</td>
+      <td>Украина	</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+     <td><a href="#openModalTen">44160000-9 Магистрали, трубопроводы, трубы, обсадные трубы, тюбинги и сопутствующие изделия	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalTen">	</a>
+      </div>
+      <div id="openModalTen" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44160000-9 Магистрали, трубопроводы, трубы, обсадные трубы, тюбинги и сопутствующие изделия</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 5600 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Гофротара, Шланг вода нержавіюча сталь</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке гофротары в  больших объемах. Это нержавеющая сталь, шланги и т.д.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>5600 шт	</td>
+      <td>Гофротара, Шланг вода нержавіюча сталь</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы</td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+    <td><a href="#openModalEleven">22990000-6 Газетная бумага, бумага ручного изготовления и другой немелованная бумага или картон для графических целей	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalEleven">	</a>
+      </div>
+      <div id="openModalEleven" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">22990000-6 Газетная бумага, бумага ручного изготовления и другой немелованная бумага или картон для графических целей</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 14000шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Гофротара  бумага ручного изготовления</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке гофротаре в больших объемах. Это бумага ручного изготовления.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>1400шт</td>
+      <td>Гофротара бумага ручного изготовления	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы
+      </td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+     <td><a href="#openModalTwelf">37820000-2 Принадлежности для изобразительного искусства	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalTwelf">	</a>
+      </div>
+      <div id="openModalTwelf" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">37820000-2 Принадлежности для изобразительного искусства</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 1000шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Тара для упаковки сцинтиляторів і сцинтиляційних збірок</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке тар для упаковкт сцынтыляторов, в больших объемах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <td>1000 шт	</td>
+      <td>Тара для упаковки сцинтиляторів і сцинтиляційних збірок	</td>
+      <td>Украина</td>
+      <td>Закупка без использования электронной системы </td>
+    </tr>
+    <tr>
+      <td>от 30.12.2021 до 08.01.2022</td>
+      <td><a href="#openModalThreteen">31680000-6 Электрическое принадлежности и принадлежности к электрооборудования	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalThreteen">	</a>
+      </div>
+      <div id="openModalThreteen" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">31680000-6 Электрическое принадлежности и принадлежности к электрооборудования</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 150 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Електричне приладдя (гофротара лампы</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке електронных изделий (гофротра лампы) в больших объемах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <td>150шт	</td>
+      <td>Електричне приладдя (гофротара лампы)	</td>
+      <td>Украина	</td>
+      <td>Закупка без использования электронной системы
+      </td>
+    </tr>
+  </table>
+  <div class="block">
+  </div>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalOne"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalOne').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalOne').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalTwo"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalTwo').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalTwo').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalThree"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalThree').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalThree').style.marginLeft = '0px';
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalFour"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalFour').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalFour').style.marginLeft = '0px';
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalFive"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalFive').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalFive').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalSix"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalSix').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalSix').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalSeven"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalSeven').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalSeven').style.marginLeft = '0px';
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalEight"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalEight').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalEight').style.marginLeft = '0px';
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalNine"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalNine').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalNine').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalTen"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalTen').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalTen').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalEleven"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalEleven').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalEleven').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalTwelf"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalTwelf').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalTwelf').style.marginLeft = '0px';
+      });
+    });
+  </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalThreteen"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalThreteen').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalThreteen').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <div id="footer" class="tc">
+<table style="width:1000px;margin:auto;border-top:3px solid #0f8243;" class="tl" cellspacing="0" cellpadding="0">
+<tbody><tr style="height:60px;">
+ <td>© ВОЖК, 2011<br>© <a href="http://vmzhk.vioil.com/www.vioil.com/index.htm" tppabs="http://vioil.com/">ViOil</a>, 2011</td>
+</tr>
+</tbody></table>
+</div>
+
+</xbasehref="http:></body></html>
