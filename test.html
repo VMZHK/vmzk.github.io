@@ -752,9 +752,69 @@ table{position: relative; top: 20px;}
     </tr>
    <tr>
     <td>от 30.12.2021 до 08.01.2022</td>
-    <td>44170000-2 Плиты, листы, ленты и фольга, связанные с конструкционными материалами</td>
+    <td><a href="#openModalFourteen">44170000-2 Плиты, листы, ленты и фольга, связанные с конструкционными материалами	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalFourteen">	</a>
+      </div>
+      <div id="openModalFourteen" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44170000-2 Плиты, листы, ленты и фольга, связанные с конструкционными материалами</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 150 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Плівка упаковочна тонка</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке упаковочной пленки (тонкая) в больших объемах)</p>
+            </div>
+          </div>
+        </div>
+    </div>
     <td>150шт</td>
     <td>Плівка упаковочна тонка</td>
+    <td>Украина</td>
+    <td>Закупка без использования электронной системы</td>
+   </tr>
+   <tr>
+    <td>от 30.12.2021 до 08.01.2022</td>
+     <td><a href="#openModalFourteen">44170000-2 Плиты, листы, ленты и фольга, связанные с конструкционными материалами	</a></td>
+      <div style="text-align: center;">
+        <a href="#openModalFourteen">	</a>
+      </div>
+      <div id="openModalFourteen" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">44170000-2 Плиты, листы, ленты и фольга, связанные с конструкционными материалами</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>Дата начало/окончание</p>
+              <p class="data">от 30.12.2021 до 08.01.2022</p>
+              <p class="volume">Объемы </p>
+              <p class="ton"> 150 шт</p>
+              <p class="name">Наименование</p>
+              <p class="tag">Плівка упаковочна тонка</p>
+              <p class="cit">Место поставки</p>
+              <p class="build">Украини</p>
+              <p class="form">Форма проведения закупки</p>
+              <p class="first">Закупка без использования электронной системы</p>
+              <p class="serv">Услуга по закупке упаковочной пленки (тонкая) в больших объемах)</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <td> 150 шт</td>
+    <td>Плівка упаковочна тянуча</td>
     <td>Украина</td>
     <td>Закупка без использования электронной системы</td>
    </tr>
@@ -957,6 +1017,21 @@ table{position: relative; top: 20px;}
       });
     });
   </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalFourteen"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalFourteen').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalFourteen').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <div id="footer" class="tc">
