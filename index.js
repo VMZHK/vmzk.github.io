@@ -8,7 +8,7 @@ function randomInteger(min, max) {
   }
   
   function resultOnLoad() {
-    document.getElementById("result").innerHTML = randomInteger(4, 8);
+    document.getElementById("result").innerHTML ="участников" + " " + randomInteger(4, 8);
   }
   
 resultOnLoad();
